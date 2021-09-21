@@ -2,12 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import configureStore from './store/configureStore';
 import getMiddlewares from './middlewares';
+import leads from './devserver/db/leads.json';
 import './index.css';
 import App from './pages/App';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
 
 const storeConfig = configureStore(getMiddlewares());
+
+localStorage.setItem('Leads', JSON.stringify(leads));
 
 ReactDOM.render(
   <React.StrictMode>

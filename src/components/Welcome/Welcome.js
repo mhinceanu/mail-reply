@@ -4,7 +4,7 @@ import { FormattedMessage } from 'react-intl';
 
 const Welcome = () => {
   const dictionaryState = useSelector(
-    state => state.dictionary,
+    (state) => state.dictionary,
     shallowEqual
   );
 
