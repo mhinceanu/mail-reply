@@ -75,7 +75,10 @@ const Overview = () => {
             <li key={Math.random()}>
               <p>{lead.subject}</p>
               <textarea defaultValue={lead.body}></textarea>
-              <p>{lead.status}</p>
+              <p className="overview_status" name={lead.status}>
+                {lead.status}
+              </p>
+              <p>{lead.sessionUser || null}</p>
             </li>
           ))}
       </ol>

@@ -51,6 +51,18 @@
     width: 250px;
 }
 
+.overview_status[name="positive"] {
+    color: rgb(0, 187, 0);
+}
+
+.overview_status[name="neutral"] {
+    color: rgb(228, 169, 8);
+}
+
+.overview_status[name="not a lead"] {
+    color: rgb(216, 9, 9);
+}
+
 .overview_alert {
     position: absolute;
     width: 100%;
