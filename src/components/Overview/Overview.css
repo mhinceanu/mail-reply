@@ -37,6 +37,23 @@
     height: fit-content;
 }
 
+.overview_list_header_subject {
+    font-weight: bold;
+}
+
+.overview_list_header_message {
+    width: 100% !important;
+    font-weight: bold;
+}
+
+.overview_list_header_status {
+    font-weight: bold;
+}
+
+.overview_list_header_user {
+    font-weight: bold;
+}
+
 .overview li p {
     font-size: 14px;
     width: 130px;
