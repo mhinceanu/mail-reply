@@ -70,11 +70,17 @@ const Overview = () => {
         </p>
       </section>
       <ol type="1">
+        <li key={Math.random()}>
+          <p className="overview_list_header_subject">Subject</p>
+          <p className="overview_list_header_message">Message</p>
+          <p className="overview_list_header_status">Status</p>
+          <p className="overview_list_header_user">User</p>
+        </li>
         {leadsState &&
           leadsState.leads?.map((lead) => (
             <li key={Math.random()}>
               <p>{lead.subject}</p>
-              <textarea defaultValue={lead.body}></textarea>
+              <textarea defaultValue={lead.body} disabled></textarea>
               <p className="overview_status" name={lead.status}>
                 {lead.status}
               </p>
